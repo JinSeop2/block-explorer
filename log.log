@@ -1,0 +1,339 @@
+Please open web browser to access ：http://localhost:8080/
+성공
+(node:26244) UnhandledPromiseRejectionWarning: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'create table timestampa (datetime datetime default null) ; 
+  Insert Into timest' at line 2
+    at Query.Sequence._packetToError (/home/kccmonitor/blockchain-explorer/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/home/kccmonitor/blockchain-explorer/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/home/kccmonitor/blockchain-explorer/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/home/kccmonitor/blockchain-explorer/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/home/kccmonitor/blockchain-explorer/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/home/kccmonitor/blockchain-explorer/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    --------------------
+    at Protocol._enqueue (/home/kccmonitor/blockchain-explorer/node_modules/mysql/lib/protocol/Protocol.js:145:48)
+    at Connection.query (/home/kccmonitor/blockchain-explorer/node_modules/mysql/lib/Connection.js:208:25)
+    at /home/kccmonitor/blockchain-explorer/app/db/pgservice.js:605:20
+    at new Promise (<anonymous>)
+    at Object.getRowsBySQlQuery (/home/kccmonitor/blockchain-explorer/app/db/pgservice.js:604:12)
+    at Object.getTxByHour (/home/kccmonitor/blockchain-explorer/app/service/metricservice.js:229:16)
+    at /home/kccmonitor/blockchain-explorer/main.js:362:23
+    at Layer.handle [as handle_request] (/home/kccmonitor/blockchain-explorer/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/kccmonitor/blockchain-explorer/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/kccmonitor/blockchain-explorer/node_modules/express/lib/router/route.js:112:3)
+(node:26244) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 1)
+(node:26244) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+(node:26244) UnhandledPromiseRejectionWarning: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'create table timestamp (datetime datetime default null) ; 
+  Insert Into timesta' at line 2
+    at Query.Sequence._packetToError (/home/kccmonitor/blockchain-explorer/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/home/kccmonitor/blockchain-explorer/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/home/kccmonitor/blockchain-explorer/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/home/kccmonitor/blockchain-explorer/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/home/kccmonitor/blockchain-explorer/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/home/kccmonitor/blockchain-explorer/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    --------------------
+    at Protocol._enqueue (/home/kccmonitor/blockchain-explorer/node_modules/mysql/lib/protocol/Protocol.js:145:48)
+    at Connection.query (/home/kccmonitor/blockchain-explorer/node_modules/mysql/lib/Connection.js:208:25)
+    at /home/kccmonitor/blockchain-explorer/app/db/pgservice.js:605:20
+    at new Promise (<anonymous>)
+    at Object.getRowsBySQlQuery (/home/kccmonitor/blockchain-explorer/app/db/pgservice.js:604:12)
+    at Object.getTxByMinute (/home/kccmonitor/blockchain-explorer/app/service/metricservice.js:191:14)
+    at /home/kccmonitor/blockchain-explorer/main.js:336:23
+    at Layer.handle [as handle_request] (/home/kccmonitor/blockchain-explorer/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/kccmonitor/blockchain-explorer/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/kccmonitor/blockchain-explorer/node_modules/express/lib/router/route.js:112:3)
+(node:26244) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 2)
+(node:26244) UnhandledPromiseRejectionWarning: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'create table timestampc (datetime datetime default null) ; 
+  Insert Into timest' at line 2
+    at Query.Sequence._packetToError (/home/kccmonitor/blockchain-explorer/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/home/kccmonitor/blockchain-explorer/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/home/kccmonitor/blockchain-explorer/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/home/kccmonitor/blockchain-explorer/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/home/kccmonitor/blockchain-explorer/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/home/kccmonitor/blockchain-explorer/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    --------------------
+    at Protocol._enqueue (/home/kccmonitor/blockchain-explorer/node_modules/mysql/lib/protocol/Protocol.js:145:48)
+    at Connection.query (/home/kccmonitor/blockchain-explorer/node_modules/mysql/lib/Connection.js:208:25)
+    at /home/kccmonitor/blockchain-explorer/app/db/pgservice.js:605:20
+    at new Promise (<anonymous>)
+    at Object.getRowsBySQlQuery (/home/kccmonitor/blockchain-explorer/app/db/pgservice.js:604:12)
+    at Object.getBlocksByHour (/home/kccmonitor/blockchain-explorer/app/service/metricservice.js:382:14)
+    at /home/kccmonitor/blockchain-explorer/main.js:417:23
+    at Layer.handle [as handle_request] (/home/kccmonitor/blockchain-explorer/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/kccmonitor/blockchain-explorer/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/kccmonitor/blockchain-explorer/node_modules/express/lib/router/route.js:112:3)
+(node:26244) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 3)
+(node:26244) UnhandledPromiseRejectionWarning: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'create table timestampb (datetime datetime default null) ; 
+  Insert Into timest' at line 2
+    at Query.Sequence._packetToError (/home/kccmonitor/blockchain-explorer/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/home/kccmonitor/blockchain-explorer/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/home/kccmonitor/blockchain-explorer/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/home/kccmonitor/blockchain-explorer/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/home/kccmonitor/blockchain-explorer/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/home/kccmonitor/blockchain-explorer/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    --------------------
+    at Protocol._enqueue (/home/kccmonitor/blockchain-explorer/node_modules/mysql/lib/protocol/Protocol.js:145:48)
+    at Connection.query (/home/kccmonitor/blockchain-explorer/node_modules/mysql/lib/Connection.js:208:25)
+    at /home/kccmonitor/blockchain-explorer/app/db/pgservice.js:605:20
+    at new Promise (<anonymous>)
+    at Object.getRowsBySQlQuery (/home/kccmonitor/blockchain-explorer/app/db/pgservice.js:604:12)
+    at Object.getBlocksByMinute (/home/kccmonitor/blockchain-explorer/app/service/metricservice.js:344:16)
+    at /home/kccmonitor/blockchain-explorer/main.js:390:23
+    at Layer.handle [as handle_request] (/home/kccmonitor/blockchain-explorer/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/kccmonitor/blockchain-explorer/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/kccmonitor/blockchain-explorer/node_modules/express/lib/router/route.js:112:3)
+(node:26244) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 4)
+Insert sql is :  INSERT INTO peer (name,requests,server_hostname) VALUES  (?,?,?) 
+INSERT ID: OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 1,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+Insert sql is :  INSERT INTO peer (name,requests,server_hostname) VALUES  (?,?,?) 
+INSERT ID: OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 2,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+Insert sql is :  INSERT INTO peer (name,requests,server_hostname) VALUES  (?,?,?) 
+INSERT ID: OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 3,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+Insert sql is :  INSERT INTO peer (name,requests,server_hostname) VALUES  (?,?,?) 
+INSERT ID: OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 4,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+Insert sql is :  INSERT INTO peer (name,requests,server_hostname) VALUES  (?,?,?) 
+INSERT ID: OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 5,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+Insert sql is :  INSERT INTO peer (name,requests,server_hostname) VALUES  (?,?,?) 
+INSERT ID: OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 6,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+Insert sql is :  INSERT INTO chaincodes (name,version,path,channelname) VALUES  (?,?,?,?) 
+INSERT ID: OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 10,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+Insert sql is :  INSERT INTO chaincodes (name,version,path,channelname) VALUES  (?,?,?,?) 
+INSERT ID: OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 11,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+Insert sql is :  INSERT INTO blocks (blocknum,channelname,prehash,datahash,txcount,createdt) VALUES  (?,?,?,?,?,?) 
+INSERT ID: OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 1,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+Insert sql is :  INSERT INTO transaction (channelname,blockid,txhash,createdt,chaincodename,chaincode_id,status,creator_msp_id,endorser_msp_id,type,read_set,write_set) VALUES  (?,?,?,?,?,?,?,?,?,?,?,?) 
+INSERT ID: OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 6,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+Insert sql is :  INSERT INTO blocks (blocknum,channelname,prehash,datahash,txcount,createdt) VALUES  (?,?,?,?,?,?) 
+INSERT ID: OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 2,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+Insert sql is :  INSERT INTO transaction (channelname,blockid,txhash,createdt,chaincodename,chaincode_id,status,creator_msp_id,endorser_msp_id,type,read_set,write_set) VALUES  (?,?,?,?,?,?,?,?,?,?,?,?) 
+INSERT ID: OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 7,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+Insert sql is :  INSERT INTO blocks (blocknum,channelname,prehash,datahash,txcount,createdt) VALUES  (?,?,?,?,?,?) 
+INSERT ID: OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 3,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+Insert sql is :  INSERT INTO transaction (channelname,blockid,txhash,createdt,chaincodename,chaincode_id,status,creator_msp_id,endorser_msp_id,type,read_set,write_set) VALUES  (?,?,?,?,?,?,?,?,?,?,?,?) 
+INSERT ID: OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 8,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+Insert sql is :  INSERT INTO blocks (blocknum,channelname,prehash,datahash,txcount,createdt) VALUES  (?,?,?,?,?,?) 
+INSERT ID: OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 4,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+Insert sql is :  INSERT INTO transaction (channelname,blockid,txhash,createdt,chaincodename,chaincode_id,status,creator_msp_id,endorser_msp_id,type,read_set,write_set) VALUES  (?,?,?,?,?,?,?,?,?,?,?,?) 
+INSERT ID: OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 9,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+Insert sql is :  INSERT INTO blocks (blocknum,channelname,prehash,datahash,txcount,createdt) VALUES  (?,?,?,?,?,?) 
+INSERT ID: OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 5,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+Insert sql is :  INSERT INTO transaction (channelname,blockid,txhash,createdt,chaincodename,chaincode_id,status,creator_msp_id,endorser_msp_id,type,read_set,write_set) VALUES  (?,?,?,?,?,?,?,?,?,?,?,?) 
+INSERT ID: OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 10,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+Insert sql is :  INSERT INTO blocks (blocknum,channelname,prehash,datahash,txcount,createdt) VALUES  (?,?,?,?,?,?) 
+INSERT ID: OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 6,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+Insert sql is :  INSERT INTO transaction (channelname,blockid,txhash,createdt,chaincodename,chaincode_id,status,creator_msp_id,endorser_msp_id,type,read_set,write_set) VALUES  (?,?,?,?,?,?,?,?,?,?,?,?) 
+INSERT ID: OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 11,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+Insert sql is :  INSERT INTO blocks (blocknum,channelname,prehash,datahash,txcount,createdt) VALUES  (?,?,?,?,?,?) 
+INSERT ID: OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 7,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+Insert sql is :  INSERT INTO transaction (channelname,blockid,txhash,createdt,chaincodename,chaincode_id,status,creator_msp_id,endorser_msp_id,type,read_set,write_set) VALUES  (?,?,?,?,?,?,?,?,?,?,?,?) 
+INSERT ID: OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 12,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+Insert sql is :  INSERT INTO blocks (blocknum,channelname,prehash,datahash,txcount,createdt) VALUES  (?,?,?,?,?,?) 
+INSERT ID: OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 8,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+Insert sql is :  INSERT INTO transaction (channelname,blockid,txhash,createdt,chaincodename,chaincode_id,status,creator_msp_id,endorser_msp_id,type,read_set,write_set) VALUES  (?,?,?,?,?,?,?,?,?,?,?,?) 
+INSERT ID: OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 13,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
