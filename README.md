@@ -6,7 +6,7 @@ Hyperledger Explorer is a simple, powerful, easy-to-use, highly maintainable, op
 ## Directory Structure
 ```
 ├── app            Application backend root
-	├── db			   Postgres script and help class
+	├── db			   Mysql script and help class
 	├── listener       Websocket listener
 	├── metrics        Metrics
 	├── mock_server	   Mock server used for development
@@ -39,19 +39,13 @@ Clone this repository to get the latest using the following command.
 
 ## Database setup
 
-Connect to PostgreSQL database.
+Connect to MariaDB.
 
-- `sudo -u postgres psql`
+- `mysql -u[사용자명] -p[패스워드]`
 
 Run create database script.
 
-- `\i app/db/explorerpg.sql`
-- `\i app/db/updatepg.sql`
-
-Run db status commands.
-
-- `\l` view created fabricexplorer database
-- `\d` view created tables
+- `source ./fabricexplorer.sql`
 
 ## Fabric network setup
 
@@ -61,7 +55,7 @@ Run db status commands.
 
 On another terminal.
 
-- `cd blockchain-explorer`
+- `cd block-explorer`
 - Modify config.json to update network-config.
 	- Change "fabric-path" to your fabric network path,
 	example: "/home/user1/workspace/fabric-samples" for the following keys: "tls_cacerts", "key", "cert".
@@ -71,12 +65,12 @@ On another terminal.
 	- pg host, username, password details.
 ```json
  "channel": "mychannel",
- "pg": {
+ "mysql": {
 		"host": "127.0.0.1",
-		"port": "5432",
+		"port": "3306",
 		"database": "fabricexplorer",
-		"username": "hppoc",
-		"passwd": "password"
+		"username": "your Mariadb username",
+		"passwd": "your MariaDB password"
 	}
 ```
 
@@ -101,7 +95,7 @@ On another terminal.
 
 From new terminal.
 
-- `cd blockchain-explorer/`
+- `cd block-explorer/`
 - `./start.sh`  (it will have the backend up).
 - `tail -f log.log` (view log)
 - Launch the URL http://localhost:8080 on a browser.
