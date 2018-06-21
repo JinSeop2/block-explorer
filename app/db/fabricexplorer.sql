@@ -1,18 +1,4 @@
-/*
- Navicat MySQL Data Transfer
 
- Source Server         : 172.16.10.162
- Source Server Type    : MySQL
- Source Server Version : 50635
- Source Host           : 172.16.10.162
- Source Database       : fabricexplorer
-
- Target Server Type    : MySQL
- Target Server Version : 50635
- File Encoding         : utf-8
-
- Date: 07/07/2017 10:14:31 AM
-*/
 
 DROP DATABASE IF EXISTS `fabricexplorer`;
 
