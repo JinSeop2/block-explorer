@@ -38,7 +38,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 var config = require('./config.json');
 var query = require('./app/query.js');
-var sql = require('./app/db/pgservice.js');
+var sql = require('./app/db/mysqlservice.js');
 
 var host = process.env.HOST || config.host;
 var port = process.env.PORT || config.port;

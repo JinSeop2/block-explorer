@@ -21,7 +21,7 @@ var co = require('co')
 var logger = helper.getLogger('blockscanner');
 var ledgerMgr = require('../utils/ledgerMgr.js')
 var config = require('../../config.json')
-var sql = require('../db/pgservice.js');
+var sql = require('../db/mysqlservice.js');
 var wss = require('../../main.js');
 var blockListener
 

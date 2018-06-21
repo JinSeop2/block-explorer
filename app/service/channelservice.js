@@ -8,7 +8,7 @@
  *
  */
 
-var sql=require('../db/pgservice.js');
+var sql=require('../db/mysqlservice.js');
 var helper = require('../helper.js');
 var logger = helper.getLogger('channelservice');
 

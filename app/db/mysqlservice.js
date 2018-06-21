@@ -3,7 +3,7 @@ const { Client } = require('mysql');
 var config = require('../../config.json')
 var mysqlconfig = config.mysql
 var helper = require('../helper.js');
-var logger = helper.getLogger('pgservice');
+var logger = helper.getLogger('mysqlservice');
 const mysql = require('mysql');
 
 var connection;
@@ -18,8 +18,8 @@ function handleDisconnect() {
         host: mysqlconfig.host,
         port: mysqlconfig.port,
         database: mysqlconfig.database,
-        user: "kjs",
-        password: "1234"
+        user: mysqlconfig.username,
+        password: mysqlconfig.passwd
 
     });
 

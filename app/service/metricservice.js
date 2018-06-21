@@ -18,7 +18,7 @@ var co = require('co')
 var helper = require('../helper.js');
 var query = require('../query.js');
 var logger = helper.getLogger('metricservice');
-var sql = require('../db/pgservice.js');
+var sql = require('../db/mysqlservice.js');
 
 var peerList;
 

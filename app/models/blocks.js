@@ -5,7 +5,7 @@
 var co = require('co')
 var helper = require('../helper.js');
 var logger = helper.getLogger('blocks');
-var sql = require('../db/pgservice.js');
+var sql = require('../db/mysqlservice.js');
 
 function getBlockAndTxList(channelName, blockNum) {
 
